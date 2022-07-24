@@ -1,5 +1,7 @@
 export const CheatSheet = () => {
     ArrayDemo();
+    TypeConversions();
+    MapDemo();
     return (
         <>
             <h3> Java Script Cheat Sheet </h3>
@@ -82,15 +84,32 @@ const ArrayDemo = () => {
 
 const TypeConversions = () => {
 
-}
+    //Int to String
+    let myInt = 42;
+    let myString = myInt.toString();
+    console.log(myString);
 
+    //String to Int
+    let newInt = parseInt(myString);
+    console.log(newInt);
 
-
-const StringDemo = () => {
-
+    let greetings = "Hello World";
+    let charArray = Array.from(greetings)
+    let newString = charArray.join("");
+    console.log(newString);
 }
 
 const MapDemo = () => {
+    let fruitMap = new Map();
+    fruitMap.set("Apple", 100);
+    fruitMap.set("Banana", 200);
+    fruitMap.set("Cherry", 300);
 
+    for (let key of fruitMap.keys()) {
+        console.log(fruitMap.get(key));
+    }
+
+    fruitMap.delete("Apple");
+    console.log(fruitMap);
 }
 
