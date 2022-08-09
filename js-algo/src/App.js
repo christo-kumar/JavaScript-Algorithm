@@ -1,12 +1,12 @@
 import './App.css';
-import { CheatSheet } from './CheatSheet.js/CheatSheet';
+import { Recursion } from './Recursion/Recursion';
 
 function App() {
 
   return (
     <div className="App">
       <h1>Java Script Algorithms</h1>
-      <CheatSheet />
+      <Recursion />
     </div>
   );
 }
